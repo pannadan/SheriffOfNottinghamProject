@@ -1,0 +1,92 @@
+.ticker-wrapper {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding-top: 200px;
+}
+
+.bigheading {
+  display: block;
+  position: absolute;
+  font-style: italic;
+  font-size: 40px;
+  background: #e60000;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.bigheading::after,
+.bigheading::before {
+  content: "";
+  width: 0;
+  position: absolute;
+  border-width: 78px;
+  border-style: solid;
+  top: 0;
+  z-index: -1;
+}
+
+.bigheading:before {
+  border-color: #e60000 transparent transparent transparent;
+  right: -78px;
+}
+
+.bigheading:after {
+  border-color: #e60000 transparent transparent transparent;
+  left: -78px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 25px;
+  flex-wrap: wrap;
+}
+
+.containGain {
+  display: flex;
+  margin: 10px;
+}
+
+.containLoss {
+  display: flex;
+  margin: 10px;
+}
+
+.table {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.square {
+  width: 650px;
+  height: 450px;
+  background-color: #98e496;
+  flex-direction: row;
+  align-items: left;
+  font-size: medium;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+}
+
+.square2 {
+  width: 650px;
+  height: 450px;
+  background-color: #e3a2ae;
+  font-size: medium;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+}
+
+.stockContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 100px;
+}
